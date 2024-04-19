@@ -15,6 +15,7 @@ const Projects = () => {
             <img src='' alt='' className='worksImg'/>
             <img src='' alt='' className='worksImg'/>
         </div>
+        <button className='workBtn'>See More</button>
     </section>
   )
 }
