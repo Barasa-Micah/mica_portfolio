@@ -31,7 +31,7 @@ const skills = () => {
                 <img src={mpesa} alt='mpesa integration' className='skillBarImg'/>
                 <div className='skillBarText'>
                     <h2>Payment Integration</h2>
-                    <p>I speacialize in integrating Mpesa payments into web and mobile applications, leveraging the Mpesa API to facilitate seamless and secure transactions. <br/>My expertise in backend development allows me to implement Mpesa payment functionality effectively, ensuring a smooth experience</p>
+                    <p>I specialize in integrating Mpesa payments into web and mobile applications, leveraging the Mpesa API to facilitate seamless and secure transactions. <br/>My expertise in backend development allows me to implement Mpesa payment functionality effectively, ensuring a smooth experience</p>
                 </div>
             </div>
         </div>
