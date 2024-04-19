@@ -7,7 +7,7 @@ const skills = () => {
   return (
     <section id='skills'>
         <span className='skillTitle'>My Expertise</span>
-        <span className='skillDesc'>I'm a highly skilled software developer with a very strong background in HTML, CSS, JavaScriot, React, PHP, Python, SQL, Flask and Django. My expertise lies in creating dynamic and responsive web applications that deliver exceptional user experiences</span>
+        <span className='skillDesc'>I'm a highly skilled software developer with a very strong background in HTML, CSS, JavaScript, Reactjs, PHP, Python, SQL, Flask and Django. My expertise lies in creating dynamic and responsive web applications that deliver exceptional user experiences</span>
         <div  className='skillBars'>
             <div className='skillBar'>
                 <img src={frontend} alt='frontdevelopment' className='skillBarImg'/>
