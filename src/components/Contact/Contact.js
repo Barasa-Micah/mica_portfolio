@@ -1,27 +1,22 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./Contact.css";
-import LinkedIn from "../../assets/Linkedin.png";
-import Instagram from "../../assets/Insta.png";
-import X from "../../assets/Twitter.png";
-import emailjs from "@emailjs/browser";
+import LinkedInIcon from "../../assets/Linkedin.png";
+import InstagramIcon from "../../assets/Insta.png";
+import TwitterIcon from "../../assets/Twitter.png";
 
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const handleLinkedInClick = () => {
+    window.open("https://www.linkedin.com/in/mica-barasa", "_blank");
+  };
 
-    emailjs
-      .sendForm("service_bk2ngos", "template_9nyrigo", form.current, {
-        publicKey: "Y7EkqiNrEGOI6IYYaBFxL",
-      })
-      .then((result) => {
-        console.log(result.text);
-        e.target.reset();
-        alert('Email sent !');
-      }, (error) => {
-        console.log(error.text)
-      });
-  }  
+  const handleInstagramClick = () => {
+    window.open("https://www.instagram.com/mica.codes?igsh=NXVmdzVkbzNkamJ6", "_blank");
+  };
+
+  const handleTwitterClick = () => {
+    window.open("https://x.com/BarasaMicah5?t=2cfhuXIWPkRDuet8iS0EEg&s=09", "_blank");
+  };
+
   return (
     <section id="contactPage">
       <div id="clients">
@@ -42,9 +37,9 @@ const Contact = () => {
         <span className="contactDesc">
           Please fill out the form below to discuss any work opportunities
         </span>
-        <form className="contactForm" ref={form} onSubmit={sendEmail}>
-          <input type="text" className="name" placeholder="Your Name" name="your_name"/>
-          <input type="email" className="email" placeholder="Your Email" name="your_email"/>
+        <form className="contactForm">
+          <input type="text" className="name" placeholder="Your Name" />
+          <input type="email" className="email" placeholder="Your Email" />
           <textarea
             className="msg"
             name="message"
@@ -55,9 +50,24 @@ const Contact = () => {
             Submit
           </button>
           <div className="links">
-            <img src={LinkedIn} alt="Linkedin" className="link" />
-            <img src={Instagram} alt="Instagram" className="link" />
-            <img src={X} alt="X" className="link" />
+            <img
+              src={LinkedInIcon}
+              alt="Linkedin"
+              className="link"
+              onClick={handleLinkedInClick}
+            />
+            <img
+              src={InstagramIcon}
+              alt="Instagram"
+              className="link"
+              onClick={handleInstagramClick}
+            />
+            <img
+              src={TwitterIcon}
+              alt="Twitter"
+              className="link"
+              onClick={handleTwitterClick}
+            />
           </div>
         </form>
       </div>
