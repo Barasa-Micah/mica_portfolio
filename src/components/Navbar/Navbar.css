@@ -45,3 +45,9 @@
     height: 1rem;
     width: 1rem;
 }
+
+.active {
+    color: orange;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid orange;
+}
