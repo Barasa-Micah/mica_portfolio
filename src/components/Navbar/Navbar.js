@@ -8,12 +8,14 @@ const Navbar = () => {
     <nav className='navbar'>
         <img  src={logo} alt='logo' className='logo'/>
         <div className='desktopMenu'>
-            <Link to="home" smooth={true} duration={500} className='desktopMenuListItem'>Home</Link>
-            <Link to="about" smooth={true} duration={500} className='desktopMenuListItem'>About</Link>
-            <Link to="portfolio" smooth={true} duration={500} className='desktopMenuListItem'>Portfolio</Link>
-            <Link to="clients" smooth={true} duration={500} className='desktopMenuListItem'>Clients</Link>
+            <Link activeClass='active' to="Home" spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
+            <Link activeClass='active'  to="about" spy={true} smooth={true} offset={-100} duration={500}  className='desktopMenuListItem'>About</Link>
+            <Link activeClass='active'  to="portfolio"spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Portfolio</Link>
+            <Link activeClass='active'  to="clients" spy={true} smooth={true} offset={-100} duration={500}  className='desktopMenuListItem'>Clients</Link>
         </div>
-        <button className='desktopMenuBtn'>
+        <button className='desktopMenuBtn' onClick={() =>{
+            document.getElementById('contact').scrollIntoView({behavior:'smooth'})
+        }}>
             <img src={ContactImg} alt='' className='desktopMenuImg'/>Contact Me
         </button>
     </nav>
