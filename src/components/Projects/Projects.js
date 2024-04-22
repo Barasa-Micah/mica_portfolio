@@ -11,10 +11,10 @@ const Projects = () => {
         <h2 className='worksTitle'>My Portfolio</h2>
         <span className='worksDesc'>In my portfolio, each project embodies my sense of ownership and commitment to excellence. From inception to deployment, I've taken full responsibility for their success, ensuring every aspect aligns with the  project's goals</span>
         <div className='worksImgs'>
-            <img src={project1} alt='' className='worksImg'/>
+            <img src={project1} alt='' className='worksImg' height='30px' width='40%'/>
             <img src='' alt='' className='worksImg'/>
-            <img src={pro} alt='' className='worksImg'/>
-            <img src={project4} alt='' className='worksImg'/>
+            <img src={pro} alt='' className='worksImg'  height='30px' width='40%'/>
+            <img src={project4} alt='' className='worksImg'  height='30px' width='40%'/>
             <img src='' alt='' className='worksImg'/>
             <img src='' alt='' className='worksImg'/>
         </div>
