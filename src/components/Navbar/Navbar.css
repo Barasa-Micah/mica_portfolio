@@ -77,14 +77,45 @@
     background: rgb(30,30, 30)
 }
 
+/* Responsive design */
 @media screen and (max-width: 720px) {
-    .mobMenu{
+    .desktopMenu {
+        display: none;
+    }
+
+    .desktopMenuBtn {
+        display: none;
+    }
+
+    .mobMenu {
         display: flex;
     }
-    .desktopMenu{
-        display: none;
+
+    .navMenu {
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        top: 5rem;
+        padding: 1rem;
+        width: 100%;
+        background: rgb(40, 40, 40);
+        border-radius: 1rem;
+        display: none; 
+        position: absolute;
+        z-index: 2;
     }
-    .desktopMenuBtn{
-        display: none;
+
+
+    .navMenu.show {
+        display: flex;
+    }
+
+    .listItem {
+        color: white;
+        padding: 0.5rem 1rem;
+        margin: 0.25rem;
+        background: rgb(30, 30, 30);
+        width: 100%;
+        text-align: center;
     }
 }
